@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.HelloController">
+   <children>
+      <FlowPane alignment="CENTER" prefHeight="130.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="75.0" text="Сумма в чеке " textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="textField" prefHeight="26.0" prefWidth="103.0" />
+         </children></FlowPane>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#calculate_big_tips" prefHeight="30.0" prefWidth="84.0" text="Большие">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="118.0">
+               <children>
+                  <Label fx:id="big_tips_label1" alignment="CENTER" text="" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="big_tips_label2" alignment="CENTER" text="" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="big_tips_label3" alignment="CENTER" prefHeight="18.0" prefWidth="121.0" text="" />
+               </children>
+            </VBox>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#calculate_normal_tips" prefHeight="30.0" prefWidth="84.0" text="Обычные">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="118.0">
+               <children>
+                  <Label fx:id="normal_tips_label1" alignment="CENTER" text="" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="normal_tips_label2" alignment="CENTER" text="" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="normal_tips_label3" alignment="CENTER" prefHeight="18.0" prefWidth="126.0" text="" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </VBox>
+         </children></HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#calculate_small_tips" prefHeight="30.0" prefWidth="84.0" text="Мелочь" />
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="118.0">
+               <children>
+                  <Label fx:id="small_tips_label1" alignment="CENTER" text="" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="small_tips_label2" alignment="CENTER" text="" textAlignment="CENTER" wrapText="true" />
+                  <Label fx:id="small_tips_label3" alignment="CENTER" prefHeight="18.0" prefWidth="121.0" text="" wrapText="true" />
+               </children>
+            </VBox>
+         </children></HBox>
+   </children>
+</VBox>
